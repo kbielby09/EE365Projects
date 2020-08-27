@@ -1,0 +1,80 @@
+library IEEE;
+use IEEE.Std_logic_1164.all;
+use IEEE.Numeric_std.all;
+
+entity Counter is
+  port (Clock, Choice, Reset, Enable, Load, UpDn: in Std_logic;
+        Data: in Std_logic_vector(4 downto 0);
+        Q:   out Std_logic_vector(4 downto 0));
+end;
+
+architecture RTL of Counter is
+  signal Cnt: Unsigned(4 downto 0):="00000";
+  signal r: Std_logic:= '0';
+  signal UD: Std_logic:= '1';
+  
+begin
+  
+  process (Clock, Reset, UpDn)
+  begin 	
+    
+  	
+  	if Choice = '1' then
+    	if Rising_edge(Reset) then
+    		r <= '1';
+		elsif Falling_edge(Reset) then
+        	UD <= '0';
+		end if;
+    
+    	if Rising_edge(UpDn) then
+    		UD <= '1';
+		elsif Falling_edge(UpDn) then
+        	UD <= '0';
+		end if; 
+        
+    	if Cnt = "11001" then
+        	r <= '1';
+        end if;
+    end if;
+    
+    if Choice = '0' then
+    	if Rising_edge(Reset) then
+    		r <= '1';
+		elsif Falling_edge(Reset) then
+        	UD <= '0';
+		end if;
+    
+    	if Rising_edge(UpDn) then
+    		UD <= '1';
+		elsif Falling_edge(UpDn) then
+        	UD <= '0';
+		end if; 
+    	
+    	if Cnt = "11001" then
+        	UD <= '0';
+        elsif Cnt = "00000" then 
+        	UD <= '1';
+        end if;
+    end if;
+
+  	if r = '1' then
+      	Cnt <= (others => '0');
+       	r <= '0';
+	elsif Rising_edge(Clock) then
+    	Cnt <= Cnt + 1;
+    	if Enable = '1' then
+        	if Load = '1' then
+          		Cnt <= Unsigned(Data);
+        	elsif UD = '1' then
+          		Cnt <= Cnt + 1;
+			else
+          		Cnt <= Cnt - 1;
+        	end if; 
+      	end if;
+    end if;
+    
+  end process;
+  
+  Q <= Std_logic_vector(Cnt);
+
+end;
