@@ -14,15 +14,16 @@ end;
 --defined behavior of D flip flop
 architecture Test of DFlipFlop is
 
+begin 
+	
 	--define sequential behavior of D Flip Flop
-    process(clk, input)
-    begin 
+    process (clk, input) begin
     
-    --on rising edge of the clock output becomes the previous input
-    if Rising_edge(clk) then 
-    	Q <= input; 
-        QPrime <= not(input);
-    end if;
+      --on rising edge of the clock output becomes the previous input
+      if Rising_edge(clk) then 
+          Q <= input; 
+          QPrime <= not(input);
+      end if;
     
     end process;
 end;

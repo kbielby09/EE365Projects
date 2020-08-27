@@ -19,8 +19,10 @@ component DFlipFlop is
 end component;
 
 --define signals 
-signal clock: Std_logic:= '0';
+signal clk: Std_logic:= '0';
 signal input: Std_logic:= '0';
+signal Q: Std_logic:= '0';
+signal QPrime: Std_logic:= '0';
 
 begin
 
