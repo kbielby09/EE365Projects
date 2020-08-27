@@ -24,13 +24,27 @@ signal input: Std_logic:= '0';
 
 begin
 
-	--Connect DUT DFlipFlop
-	DUT: DFlipFlop port map();
+	--Connect DUT DFlipFlop component
+	DUT: DFlipFlop port map(clk=>clk, input=>input, Q=>Q, QPrime=>QPrime);
+    
+    --specify clock frequency
+    clk <= not clk after 10 ns;
     
     --create test process
     process
     begin
-    	--test code here
+    	--display the initial state of the D flip flop for two clock cycles
+    	wait for 40ns;
+        
+        --change the input signal value for 2 clock cycles
+        input <= '1';
+        wait for 40ns;
+        
+        --cycle input again
+        input <= '0';
+        wait for 40ns;
+        
+        wait;
     end process;
 
 end tb;
