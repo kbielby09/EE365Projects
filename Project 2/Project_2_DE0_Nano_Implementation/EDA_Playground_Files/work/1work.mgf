@@ -1,0 +1,30 @@
+V 000049 55 934           1599588075361 behavior
+(_unit VHDL(carcounter 0 18(behavior 0 25))
+	(_version ve8)
+	(_time 1599588075362 2020.09.08 14:01:15)
+	(_source(\../design.vhd\))
+	(_parameters tan)
+	(_code 2c7879287e7a7a3a2e786a77782a792b282a292b2e)
+	(_ent
+		(_time 1599588075359)
+	)
+	(_object
+		(_port(_int clk -1 0 19(_ent(_in))))
+		(_port(_int reset -1 0 19(_ent(_in))))
+		(_port(_int forward -1 0 19(_ent(_in))))
+		(_port(_int backward -1 0 19(_ent(_in))))
+		(_port(_int output -1 0 20(_ent(_out))))
+		(_type(_int ~STD_LOGIC_VECTOR{7~downto~0}~12 0 21(_array -1((_dto i 7 i 0)))))
+		(_port(_int carCount 0 0 21(_ent(_out))))
+		(_type(_int States 0 27(_enum1 A B BOTH IDLE (_to i 0 i 3))))
+		(_prcs
+			(line__32(_arch 0 0 32(_prcs(_simple)(_trgt(5))(_sens(0)(1)(2)(3)))))
+		)
+		(_type(_ext ~extieee.std_logic_1164.STD_LOGIC(0 STD_LOGIC)))
+	)
+	(_use(ieee(std_logic_1164))(std(standard)))
+	(_static
+		(33686018 33686018)
+	)
+	(_model . behavior 1 -1)
+)

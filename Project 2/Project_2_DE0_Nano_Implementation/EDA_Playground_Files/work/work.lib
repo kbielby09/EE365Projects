@@ -1,0 +1,24 @@
+timestamp=1599588075369
+
+[~A]
+ModifyID=1
+Version=74
+
+[~MFT]
+0=7|0work.mgf|1130|0
+1=1|1work.mgf|0|0
+3=1|3work.mgf|0|0
+
+[carcounter]
+A/behavior=21|../design.vhd|25|1*0
+BinL64/behavior=3*0
+I=0*572
+I/behavior=0*1130
+M=11|1|ve8|1599588075358|../design.vhd|0*225*0x288fc49114500907a5cda8781f55489e322d651e|0*495*0xd986fd7175c8cf28cd774bcadde79966
+M/behavior=21|1|ve8|1599588075360|../design.vhd|0*775*0x087ee0ac40e0f2ddcd76417d2af9c6faa37ba64f|0*1041*0xb966535deb9617f745ced53ae4cc1a7f
+R=../design.vhd|18
+Version=2020.04.130 (Linux64)|00000006789c53d0353230b0000003970118|5708da88e6e40f96ef22642de3920d07a61b702551ecb4c28bb803a0178ca7c3e6c0b4f87cc3f522202b48812803c9c2
+Version/behavior=2020.04.130 (Linux64)|00000006789c53d0353230b0000003970118|f9bccf16e2dce5a640f0ad5e8eaa0283e08d679eaf1bc9de9439630905b37e5ffef504d2703984cf2d7a52d0d6aee60b
+
+[~U]
+carcounter=carCounter 11|0*0|
