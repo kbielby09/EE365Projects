@@ -23,78 +23,132 @@ end;
 -- Define Behavior of Testbench
 architecture behavior of car_counter is
 	-- define states for carCounter FSM
-    type States is (A, B, BOTH, IDLE);
+   type States is (A, B, BOTH, IDLE);
 	signal state : States;
-    signal previousState : States;
-    signal count : Unsigned(7 downto 0);
+   signal previousState : States;
+   signal count : Unsigned(7 downto 0) := "00000000";
+	signal flag : std_logic := '1';
 
 	begin
 
+	carCount <= std_logic_Vector(count);
     --sequential behavior of car counter
-    process(clk, reset, sensorA, sensorB) begin
+--    process(clk, reset, sensorA, sensorB) begin
+--	 process(sensorA, sensorB) begin
 
         --reset car counter to 0
-    	if reset = '1' then
+    	--if  reset = '1' then
         	--reset binary count to 0
         	--carCount <= "00000000";
          --count <= (others => '0');
 			--cout <= "00000000";
 
         --check for a change of states when clock changes
-        elsif rising_edge(clk) then
-        	if sensorA = '1' then
-            	--update previous state
-                previousState <= state;
-                --check if both inputs are on
-                if sensorB = '1' then
-                	state <= BOTH;
-                else
-                	state <= A;
-                end if;
-			end if;
+--       if rising_edge(clk) then
+--			previousState <= state;
+--        	if sensorA = '0' then
+--            	--update previous state
+----                previousState <= state;
+--                if sensorB = '0' then
+----                	state <= BOTH;
+--                else
+----                	state <= A;
+--                end if;
+--			end if;
+--
+--            --check for state transition to B
+--            if sensorB = '0' then
+----            	previousState <= state;
+--            	if sensorA = '1' then
+--                	state <= B;
+--                end if;
+--            end if;
+--
+--            --state transition to IDLE
+--            if sensorA = '1' then
+--            	if sensorB ='1' then
+--                	state <= IDLE;
+--                end if;
+--            end if;
+--
+--        end if;
+--
+--    end process;
 
-            --check for state transition to B
-            if sensorB = '1' then
-            	previousState <= state;
-            	if sensorA = '0' then
-                	state <= B;
-                end if;
-            end if;
-
-            --state transition to IDLE
-            if sensorA = '0' then
-            	if sensorB ='0' then
-                	state <= IDLE;
-                end if;
-            end if;
-
-        end if;
-
-    end process;
-
-    process(state, previousState)
+    process(clk, state, sensorA, sensorB)
     	begin
-        -- update count when in propper states
+		if rising_edge(clk) then
+			 -- update count when in propper states
+			
         case state is
 			when A=>
-				--do nothing for A
+				if sensorA = not('0') and sensorB = not('0') then 
+					
+					state <= IDLE;
+				elsif sensorA = not('1') and sensorB = not('1') then
+					
+					state <= BOTH;
+				elsif sensorA = not('0') and sensorB = not('1') then
+					
+					state <= B;
+				else 
+					flag <= '0';
+					state <= A;
+				end if;
+				
 			when BOTH=>
-				--do nothing for both
+				if sensorA = not('0') and sensorB = not('0') then 
+					
+					state <= IDLE;
+				elsif sensorA = not('1') and sensorB = not('0') then
+					
+					state <= A;
+				elsif sensorA = not('0') and sensorB = not('1') then
+					
+					state <= B;
+				else 
+					flag <= '0';
+					state <= BOTH;
+				end if;
+				
         	when B=>
-            	if previousState = IDLE then
-                	--decrement count
-                    count <= count - 1;
-                end if;
+            if sensorA = not('0') and sensorB = not('0') then
+					
+					state <= IDLE;
+--					if flag = '1' then 
+						count <= count + 1;
+--					end if;					
+				elsif sensorA = not('1') and sensorB = not('0') then
+					
+					state <= A;
+				elsif sensorA = not('1') and sensorB = not('1') then
+					
+					state <= BOTH;
+				else 
+					flag <= '0';
+					state <= B;
+				end if;
+				
 			when IDLE=>
-            	if previousState = B then
-                	--increment count
-                    count <= count + 1;
-                end if;
+				if sensorA = not('0') and sensorB = not('1') then 
+					
+					state <= B;
+--					if flag = '1' then
+						count <= count - 1;
+--					end if;					
+				elsif sensorA = not('1') and sensorB = not('0') then
+					
+					state <= A;
+				elsif sensorA = not('1') and sensorB = not('1') then
+					
+					state <= BOTH;
+				else 
+					flag <= '0';
+					state <= IDLE;
+				end if;
         end case;
-
-        --Send vehicle count to output
+		end if;
         
     end process;
 	 
-	 carCount <= Std_logic_vector(count);
 end architecture;

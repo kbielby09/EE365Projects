@@ -17,7 +17,7 @@ use IEEE.Numeric_std.all;
 -- Parking lot counter
 entity carCounter is
 	port(clk, reset, sensorA, sensorB: in Std_logic;
-        carCount: out Std_logic_Vector(7 downto 0))
+        carCount: out Std_logic_Vector(7 downto 0));
 end;
 
 -- Define Behavior of Testbench
@@ -31,7 +31,7 @@ architecture behavior of carCounter is
 	begin
 
     --sequential behavior of car counter
-    process(clk, reset, forward, backward) begin
+    process(clk, reset, sensorA, sensorB) begin
 
         --reset car counter to 0
     	if reset = '1' then
@@ -55,7 +55,7 @@ architecture behavior of carCounter is
             --check for state transition to B
             if sensorB = '1' then
             	previousState <= state;
-            	if A = '0' then
+            	if sensorA = '0' then
                 	state <= B;
                 end if;
             end if;
