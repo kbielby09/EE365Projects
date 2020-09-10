@@ -42,7 +42,6 @@ port
 
   -- LED Outputs (counter)
   -- 5-bit Binary for 5 LEDs
-);
 end entity car_counter;
 
 
