@@ -1,0 +1,16 @@
+Fitter Status : Successful - Thu Sep 10 15:57:33 2020
+Quartus II 64-Bit Version : 13.0.0 Build 156 04/24/2013 SJ Full Version
+Revision Name : car_counter
+Top-level Entity Name : car_counter
+Family : Cyclone IV E
+Device : EP4CE22F17C6
+Timing Models : Final
+Total logic elements : 14 / 22,320 ( < 1 % )
+    Total combinational functions : 14 / 22,320 ( < 1 % )
+    Dedicated logic registers : 12 / 22,320 ( < 1 % )
+Total registers : 12
+Total pins : 12 / 154 ( 8 % )
+Total virtual pins : 0
+Total memory bits : 0 / 608,256 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 132 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )

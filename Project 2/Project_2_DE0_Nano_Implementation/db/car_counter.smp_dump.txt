@@ -1,0 +1,7 @@
+
+State Machine - |car_counter|state
+Name state.IDLE state.BOTH state.B state.A 
+state.A 0 0 0 0 
+state.B 0 0 1 1 
+state.BOTH 0 1 0 1 
+state.IDLE 1 0 0 1 

@@ -1,0 +1,29 @@
+|car_counter
+clk => count[0].CLK
+clk => count[1].CLK
+clk => count[2].CLK
+clk => count[3].CLK
+clk => count[4].CLK
+clk => count[5].CLK
+clk => count[6].CLK
+clk => count[7].CLK
+clk => state~1.DATAIN
+reset => ~NO_FANOUT~
+sensorA => process_0.IN0
+sensorA => process_0.IN0
+sensorA => process_0.IN0
+sensorA => process_0.IN0
+sensorB => process_0.IN1
+sensorB => process_0.IN1
+sensorB => process_0.IN1
+sensorB => process_0.IN1
+carCount[0] <= count[0].DB_MAX_OUTPUT_PORT_TYPE
+carCount[1] <= count[1].DB_MAX_OUTPUT_PORT_TYPE
+carCount[2] <= count[2].DB_MAX_OUTPUT_PORT_TYPE
+carCount[3] <= count[3].DB_MAX_OUTPUT_PORT_TYPE
+carCount[4] <= count[4].DB_MAX_OUTPUT_PORT_TYPE
+carCount[5] <= count[5].DB_MAX_OUTPUT_PORT_TYPE
+carCount[6] <= count[6].DB_MAX_OUTPUT_PORT_TYPE
+carCount[7] <= count[7].DB_MAX_OUTPUT_PORT_TYPE
+
+
