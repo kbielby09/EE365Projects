@@ -1,0 +1,205 @@
+# Reading C:/altera/13.0/modelsim_ase/tcl/vsim/pref.tcl 
+# do car_counter_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE0_Nano_Implementation/car_counter.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity car_counter
+# -- Compiling architecture behavior of car_counter
+# 
+vcom -reportprogress 300 -work work {C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE0_Nano_Implementation/testbench.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity testbench
+# -- Compiling architecture test of testbench
+# ** Warning: [4] C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE0_Nano_Implementation/testbench.vhd(51): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE0_Nano_Implementation/testbench.vhd(61): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE0_Nano_Implementation/testbench.vhd(65): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE0_Nano_Implementation/testbench.vhd(69): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE0_Nano_Implementation/testbench.vhd(73): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE0_Nano_Implementation/testbench.vhd(77): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE0_Nano_Implementation/testbench.vhd(79): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE0_Nano_Implementation/testbench.vhd(81): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE0_Nano_Implementation/testbench.vhd(83): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE0_Nano_Implementation/testbench.vhd(87): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE0_Nano_Implementation/testbench.vhd(89): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE0_Nano_Implementation/testbench.vhd(94): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE0_Nano_Implementation/testbench.vhd(96): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE0_Nano_Implementation/testbench.vhd(98): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE0_Nano_Implementation/testbench.vhd(103): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE0_Nano_Implementation/testbench.vhd(105): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE0_Nano_Implementation/testbench.vhd(107): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE0_Nano_Implementation/testbench.vhd(109): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE0_Nano_Implementation/testbench.vhd(114): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE0_Nano_Implementation/testbench.vhd(117): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE0_Nano_Implementation/testbench.vhd(122): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE0_Nano_Implementation/testbench.vhd(125): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE0_Nano_Implementation/testbench.vhd(131): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE0_Nano_Implementation/testbench.vhd(147): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE0_Nano_Implementation/testbench.vhd(149): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE0_Nano_Implementation/testbench.vhd(151): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE0_Nano_Implementation/testbench.vhd(153): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE0_Nano_Implementation/testbench.vhd(157): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE0_Nano_Implementation/testbench.vhd(161): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE0_Nano_Implementation/testbench.vhd(163): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE0_Nano_Implementation/testbench.vhd(165): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE0_Nano_Implementation/testbench.vhd(167): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+vcom -reportprogress 300 -work work {C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE0_Nano_Implementation/testbench.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity testbench
+# -- Compiling architecture test of testbench
+vcom -reportprogress 300 -work work {C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE0_Nano_Implementation/testbench.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity testbench
+# -- Compiling architecture test of testbench
+vcom -reportprogress 300 -work work {C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE0_Nano_Implementation/testbench.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity testbench
+# -- Compiling architecture test of testbench
+vsim +altera -do car_counter_run_msim_rtl_vhdl.do -l msim_transcript -gui work.testbench
+# vsim +altera -do car_counter_run_msim_rtl_vhdl.do -l msim_transcript -gui work.testbench 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.testbench(test)
+# Loading ieee.numeric_std(body)
+# Loading work.car_counter(behavior)
+# ** Failure: (vsim-3817) Port "clk" of entity "car_counter" is not in the component being instantiated.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/DUT File: C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE0_Nano_Implementation/car_counter.vhd Line: 19
+# ** Failure: (vsim-3817) Port "reset" of entity "car_counter" is not in the component being instantiated.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/DUT File: C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE0_Nano_Implementation/car_counter.vhd Line: 19
+# ** Failure: (vsim-3817) Port "sensorA" of entity "car_counter" is not in the component being instantiated.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/DUT File: C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE0_Nano_Implementation/car_counter.vhd Line: 19
+# ** Failure: (vsim-3817) Port "sensorB" of entity "car_counter" is not in the component being instantiated.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/DUT File: C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE0_Nano_Implementation/car_counter.vhd Line: 19
+# ** Error: (vsim-3732) C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE0_Nano_Implementation/testbench.vhd(48): No default binding for component instance 'DUT'.
+# 
+#    The following component ports are not on the entity:
+#           O_LED_COUNT
+#           I_SENSOR_B_ACTIVE_N
+#           I_SENSOR_A_ACTIVE_N
+#           I_RESET_N
+#           I_CLK_50MHZ
+# 
+#         Region: /testbench/DUT
+# Fatal error in file C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE0_Nano_Implementation/car_counter.vhd
+#  while elaborating region: /testbench/DUT
+# Fatal error in file C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE0_Nano_Implementation/testbench.vhd
+#  while elaborating region: /testbench
+# Error loading design
+vsim +altera -do car_counter_run_msim_rtl_vhdl.do -l msim_transcript -gui work.testbench
+# vsim +altera -do car_counter_run_msim_rtl_vhdl.do -l msim_transcript -gui work.testbench 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.testbench(test)
+# Loading ieee.numeric_std(body)
+# Loading work.car_counter(behavior)
+# ** Failure: (vsim-3817) Port "clk" of entity "car_counter" is not in the component being instantiated.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/DUT File: C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE0_Nano_Implementation/car_counter.vhd Line: 19
+# ** Failure: (vsim-3817) Port "reset" of entity "car_counter" is not in the component being instantiated.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/DUT File: C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE0_Nano_Implementation/car_counter.vhd Line: 19
+# ** Failure: (vsim-3817) Port "sensorA" of entity "car_counter" is not in the component being instantiated.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/DUT File: C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE0_Nano_Implementation/car_counter.vhd Line: 19
+# ** Failure: (vsim-3817) Port "sensorB" of entity "car_counter" is not in the component being instantiated.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/DUT File: C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE0_Nano_Implementation/car_counter.vhd Line: 19
+# ** Error: (vsim-3732) C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE0_Nano_Implementation/testbench.vhd(48): No default binding for component instance 'DUT'.
+# 
+#    The following component ports are not on the entity:
+#           O_LED_COUNT
+#           I_SENSOR_B_ACTIVE_N
+#           I_SENSOR_A_ACTIVE_N
+#           I_RESET_N
+#           I_CLK_50MHZ
+# 
+#         Region: /testbench/DUT
+# Fatal error in file C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE0_Nano_Implementation/car_counter.vhd
+#  while elaborating region: /testbench/DUT
+# Fatal error in file C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE0_Nano_Implementation/testbench.vhd
+#  while elaborating region: /testbench
+# Error loading design
+vsim +altera -do car_counter_run_msim_rtl_vhdl.do -l msim_transcript -gui work.testbench
+# vsim +altera -do car_counter_run_msim_rtl_vhdl.do -l msim_transcript -gui work.testbench 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.testbench(test)
+# Loading ieee.numeric_std(body)
+# Loading work.car_counter(behavior)
+# ** Failure: (vsim-3817) Port "clk" of entity "car_counter" is not in the component being instantiated.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/DUT File: C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE0_Nano_Implementation/car_counter.vhd Line: 19
+# ** Failure: (vsim-3817) Port "reset" of entity "car_counter" is not in the component being instantiated.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/DUT File: C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE0_Nano_Implementation/car_counter.vhd Line: 19
+# ** Failure: (vsim-3817) Port "sensorA" of entity "car_counter" is not in the component being instantiated.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/DUT File: C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE0_Nano_Implementation/car_counter.vhd Line: 19
+# ** Failure: (vsim-3817) Port "sensorB" of entity "car_counter" is not in the component being instantiated.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/DUT File: C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE0_Nano_Implementation/car_counter.vhd Line: 19
+# ** Error: (vsim-3732) C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE0_Nano_Implementation/testbench.vhd(48): No default binding for component instance 'DUT'.
+# 
+#    The following component ports are not on the entity:
+#           O_LED_COUNT
+#           I_SENSOR_B_ACTIVE_N
+#           I_SENSOR_A_ACTIVE_N
+#           I_RESET_N
+#           I_CLK_50MHZ
+# 
+#         Region: /testbench/DUT
+# Fatal error in file C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE0_Nano_Implementation/car_counter.vhd
+#  while elaborating region: /testbench/DUT
+# Fatal error in file C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE0_Nano_Implementation/testbench.vhd
+#  while elaborating region: /testbench
+# Error loading design
+vsim +altera -do car_counter_run_msim_rtl_vhdl.do -l msim_transcript -gui work.testbench(test)
+# vsim +altera -do car_counter_run_msim_rtl_vhdl.do -l msim_transcript -gui work.testbench(test) 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.testbench(test)
+# Loading ieee.numeric_std(body)
+# Loading work.car_counter(behavior)
+# ** Failure: (vsim-3817) Port "clk" of entity "car_counter" is not in the component being instantiated.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/DUT File: C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE0_Nano_Implementation/car_counter.vhd Line: 19
+# ** Failure: (vsim-3817) Port "reset" of entity "car_counter" is not in the component being instantiated.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/DUT File: C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE0_Nano_Implementation/car_counter.vhd Line: 19
+# ** Failure: (vsim-3817) Port "sensorA" of entity "car_counter" is not in the component being instantiated.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/DUT File: C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE0_Nano_Implementation/car_counter.vhd Line: 19
+# ** Failure: (vsim-3817) Port "sensorB" of entity "car_counter" is not in the component being instantiated.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/DUT File: C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE0_Nano_Implementation/car_counter.vhd Line: 19
+# ** Error: (vsim-3732) C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE0_Nano_Implementation/testbench.vhd(48): No default binding for component instance 'DUT'.
+# 
+#    The following component ports are not on the entity:
+#           O_LED_COUNT
+#           I_SENSOR_B_ACTIVE_N
+#           I_SENSOR_A_ACTIVE_N
+#           I_RESET_N
+#           I_CLK_50MHZ
+# 
+#         Region: /testbench/DUT
+# Fatal error in file C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE0_Nano_Implementation/car_counter.vhd
+#  while elaborating region: /testbench/DUT
+# Fatal error in file C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE0_Nano_Implementation/testbench.vhd
+#  while elaborating region: /testbench
+# Error loading design

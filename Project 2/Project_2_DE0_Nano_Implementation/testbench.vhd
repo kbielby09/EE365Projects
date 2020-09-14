@@ -48,7 +48,7 @@ architecture test of testbench is
 											); -- end connect signals
 											
 		-- specify clk frequency (50MHz)
-		clk <= not clk after 10ns; -- invert clk signal at half period
+		clk <= not clk after 10 ns; -- invert clk signal at half period
 		
 		process
 		begin
@@ -58,77 +58,77 @@ architecture test of testbench is
 			-- test cases
 				-- from idle to A
 				sensorA <= '1';
-				wait for 40ns;
+				wait for 40 ns;
 			
 				-- from A to idle
 				sensorA <= '0';
-				wait for 40ns;
+				wait for 40 ns;
 			
 				-- from idle to B
 				sensorB <= '1';
-				wait for 40ns;
+				wait for 40 ns;
 			
 				-- from B to idle
 				sensorB <= '0';
-				wait for 40ns;
+				wait for 40 ns;
 				
 				-- car trips Both and reverses (enters then exits)
 				sensorA <= '1';
-				wait for 20ns;
+				wait for 20 ns;
 				sensorB <= '1';
-				wait for 20ns;
+				wait for 20 ns;
 				sensorB <= '0';
-				wait for 20ns;
+				wait for 20 ns;
 				sensorA <= '0';
-				wait for 20ns;
+				wait for 20 ns;
 				
 				-- car trips A and reverses (enters then exits)
 				sensorA <= '1';
-				wait for 20ns;
+				wait for 20 ns;
 				sensorA <= '0';
-				wait for 20ns;
+				wait for 20 ns;
 			
 			-- cases that should not happen
 				-- from A to B
 				sensorA <= '1';
-				wait for 30ns;
+				wait for 30 ns;
 				sensorA <= '0';
-				wait for 30ns;
+				wait for 30 ns;
 				sensorB <= '1';
-				wait for 30ns;
+				wait for 30 ns;
 				sensorB <= '0';
 			
 				-- from B to A
 				sensorB <= '1';
-				wait for 30ns;
+				wait for 30 ns;
 				sensorB <= '0';
-				wait for 30ns;
+				wait for 30 ns;
 				sensorA <= '1';
-				wait for 30ns;
+				wait for 30 ns;
 				sensorA <= '0';
-				wait for 20ns;
+				wait for 20 ns;
 			
 				-- from both to idle
 				sensorA <= '1';
 				sensorB <= '1';
-				wait for 30ns;
+				wait for 30 ns;
 				sensorA <= '0';
 				sensorB <= '0';
-				wait for 30ns;
+				wait for 30 ns;
 				
 				-- from idle to both
 				sensorA <= '0';
 				sensorB <= '0';
-				wait for 30ns;
+				wait for 30 ns;
 				sensorA <= '1';
 				sensorB <= '1';
-				wait for 30ns;
+				wait for 30 ns;
 				
 			-- additional checks
 				-- reset states
 				sensorA <= '0';
 				sensorB <= '0';
-				wait for 20ns;
+				wait for 20 ns;
 				
 				-- count to max value of counter	
 --				maxCountloop : for i in 0 to maxCount loop
@@ -144,27 +144,27 @@ architecture test of testbench is
 				
 				-- add 1 more count to see if overflow occurs
 				sensorA <=  '1';
-				wait for 20ns;
+				wait for 20 ns;
 				sensorB <= '1';
-				wait for 20ns;
+				wait for 20 ns;
 				sensorA <= '0';
-				wait for 20ns;
+				wait for 20 ns;
 				sensorB <= '0';
-				wait for 20ns;
+				wait for 20 ns;
 				
 				-- test reset
 				reset <= '1';
-				wait for 20ns;
+				wait for 20 ns;
 				
 				-- test decrementing counter from 0
 				sensorB <= '1';
-				wait for 20ns;
+				wait for 20 ns;
 				sensorA <= '1';
-				wait for 20ns;
+				wait for 20 ns;
 				sensorB <= '0';
-				wait for 20ns;
+				wait for 20 ns;
 				sensorA <= '0';
-				wait for 20ns;
+				wait for 20 ns;
 				
 		end process;
 				
