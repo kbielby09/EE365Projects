@@ -1,4 +1,4 @@
---------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
 -- Filename: 		testbench.vhd (Altera DEO nano implementation)
 -- Author(s): 		Kyle Bielby, Chris Lloyd (Team 1)
 -- Class: 			EE365 (Project 2)
@@ -7,8 +7,8 @@
 -- Last Revised:	2020-09-07
 -- Target Board:	Altera DE0 Nano
 -- Project:			car_counter (Main Entity)
--- Description:		testbench file to test output of car_counter.vhd for DE0 nano					 board
---------------------------------------------------------------------------------
+-- Description:		testbench file to test output of car_counter.vhd for DE0 nano board
+----------------------------------------------------------------------------------------
 
 library IEEE;
 use IEEE.std_logic_1164.all;
@@ -56,17 +56,115 @@ architecture test of testbench
 			wait for 40ns;
 			
 			-- test cases
-			-- from idle to A
-			-- from A to idle
-			-- from idle to B
-			-- from B to idle
+				-- from idle to A
+				sensorA <= '1';
+				wait for 40ns;
+			
+				-- from A to idle
+				sensorA <= '0';
+				wait for 40ns;
+			
+				-- from idle to B
+				sensorB <= '1';
+				wait for 40ns;
+			
+				-- from B to idle
+				sensorB <= '0';
+				wait for 40ns;
+				
+				-- car trips Both and reverses (enters then exits)
+				sensorA <= '1';
+				wait for 20ns;
+				sensorB <= '1';
+				wait for 20ns;
+				sensor B <= '0';
+				wait for 20ns;
+				sensorA <= '0';
+				wait for 20ns;
+				
+				-- car trips A and reverses (enters then exits)
+				sensorA <= '1';
+				wait for 20ns;
+				sensorA <= '0';
+				wait for 20ns;
 			
 			-- cases that should not happen
-			-- from A to B
-			-- from B to A
+				-- from A to B
+				sensorA <= '1';
+				wait 30ns;
+				sensorA <= '0';
+				wait for 30ns;
+				sensorB <= '1';
+				wait for 30ns;
+				sensorB <= '0';
 			
+				-- from B to A
+				sensorB <= '1';
+				wait for 30ns;
+				sensorB <= '0';
+				wait for 30ns;
+				sensorA <= '1';
+				wait for 30ns;
+				sensorA <= '0';
+				wait for 20ns;
+			
+				-- from both to idle
+				sensorA <= '1';
+				sensorB <= '1';
+				wait for 30ns;
+				sensorA <= '0';
+				sensorB <= '0';
+				wait for 30ns;
+				
+				-- from idle to both
+				sensorA <= '0';
+				sensorB <= '0';
+				wait for 30ns;
+				sensorA <= '1';
+				sensorB <= '1';
+				wait for 30ns;
+				
 			-- additional checks
-			-- hold max value of counter
-			-- don't decrement counter from 0
+				-- reset states
+				sensorA <= '0';
+				sensorB <= '0';
+				wait for 20ns;
+				
+				-- count to max value of counter	
+				maxCountloop : for i in 0 to "11111111" loop
+					sensorA <= '1';
+					wait for 20ns;
+					sensorB <= '1';
+					wait for 20ns;
+					sensorA <= '0';
+					wait for 20ns;
+					sensorB <= '0';
+					wait for 20ns;
+				end loop maxCountloop;
+				
+				-- add 1 more count to see if overflow occurs
+				sensorA <=  '1';
+				wait for 20ns;
+				sensorB <= '1';
+				wait for 20ns;
+				sensorA <= '0';
+				wait for 20ns;
+				sensorB <= '0';
+				wait for 20ns;
+				
+				-- test reset
+				reset <= '1';
+				wait for 20ns;
+				
+				-- test decrementing counter from 0
+				sensorB <= '1';
+				wait for 20ns;
+				sensorA <= '1';
+				wait for 20ns;
+				sensorB <= '0';
+				wait for 20ns;
+				sensorA <= '0';
+				wait for 20ns;
+				
 
 end test; -- end architecture
