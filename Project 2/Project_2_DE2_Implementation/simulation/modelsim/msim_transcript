@@ -1,0 +1,105 @@
+# Reading C:/altera/13.0/modelsim_ase/tcl/vsim/pref.tcl 
+# do car_counter_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE2_Implementation/car_counter.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity car_counter
+# -- Compiling architecture behavioral of car_counter
+# 
+vcom -reportprogress 300 -work work {C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE2_Implementation/testbench.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity testbench
+# -- Compiling architecture test of testbench
+vsim +altera -do car_counter_run_msim_rtl_vhdl.do -l msim_transcript -gui work.testbench
+# vsim +altera -do car_counter_run_msim_rtl_vhdl.do -l msim_transcript -gui work.testbench 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.testbench(test)
+# Loading ieee.numeric_std(body)
+# Loading work.car_counter(behavioral)
+# do car_counter_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE2_Implementation/car_counter.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity car_counter
+# -- Compiling architecture behavioral of car_counter
+# 
+add wave -position insertpoint sim:/testbench/*
+add wave -position insertpoint sim:/testbench/DUT/*
+run
+run
+# WARNING: No extended dataflow license exists
+vcom -reportprogress 300 -work work {C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE2_Implementation/testbench.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity testbench
+# -- Compiling architecture test of testbench
+vcom -reportprogress 300 -work work {C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE2_Implementation/testbench.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity testbench
+# -- Compiling architecture test of testbench
+vsim +altera -do car_counter_run_msim_rtl_vhdl.do -l msim_transcript -gui work.testbench
+# vsim +altera -do car_counter_run_msim_rtl_vhdl.do -l msim_transcript -gui work.testbench 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.testbench(test)
+# Loading work.car_counter(behavioral)
+# do car_counter_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE2_Implementation/car_counter.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity car_counter
+# -- Compiling architecture behavioral of car_counter
+# 
+add wave -position insertpoint sim:/testbench/*
+add wave -position insertpoint sim:/testbench/DUT/*
+run
+run
+run
+run

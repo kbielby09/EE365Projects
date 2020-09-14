@@ -1,0 +1,37 @@
+|car_counter
+I_CLK_50MHZ => s_local_count[0].CLK
+I_CLK_50MHZ => s_local_count[1].CLK
+I_CLK_50MHZ => s_local_count[2].CLK
+I_CLK_50MHZ => s_local_count[3].CLK
+I_CLK_50MHZ => s_local_count[4].CLK
+I_CLK_50MHZ => s_local_count[5].CLK
+I_CLK_50MHZ => s_local_count[6].CLK
+I_CLK_50MHZ => s_local_count[7].CLK
+I_CLK_50MHZ => s_previous_state~1.DATAIN
+I_CLK_50MHZ => s_current_state~1.DATAIN
+I_RESET_N => s_local_count[0].ACLR
+I_RESET_N => s_local_count[1].ACLR
+I_RESET_N => s_local_count[2].ACLR
+I_RESET_N => s_local_count[3].ACLR
+I_RESET_N => s_local_count[4].ACLR
+I_RESET_N => s_local_count[5].ACLR
+I_RESET_N => s_local_count[6].ACLR
+I_RESET_N => s_local_count[7].ACLR
+I_RESET_N => s_previous_state~3.DATAIN
+I_RESET_N => s_current_state~3.DATAIN
+I_SENSOR_A_ACTIVE_N => SENSOR_STATE_MACHINE.IN0
+I_SENSOR_A_ACTIVE_N => SENSOR_STATE_MACHINE.IN0
+I_SENSOR_A_ACTIVE_N => SENSOR_STATE_MACHINE.IN0
+I_SENSOR_B_ACTIVE_N => SENSOR_STATE_MACHINE.IN1
+I_SENSOR_B_ACTIVE_N => SENSOR_STATE_MACHINE.IN1
+I_SENSOR_B_ACTIVE_N => SENSOR_STATE_MACHINE.IN1
+O_LED_COUNT[0] <= s_local_count[0].DB_MAX_OUTPUT_PORT_TYPE
+O_LED_COUNT[1] <= s_local_count[1].DB_MAX_OUTPUT_PORT_TYPE
+O_LED_COUNT[2] <= s_local_count[2].DB_MAX_OUTPUT_PORT_TYPE
+O_LED_COUNT[3] <= s_local_count[3].DB_MAX_OUTPUT_PORT_TYPE
+O_LED_COUNT[4] <= s_local_count[4].DB_MAX_OUTPUT_PORT_TYPE
+O_LED_COUNT[5] <= s_local_count[5].DB_MAX_OUTPUT_PORT_TYPE
+O_LED_COUNT[6] <= s_local_count[6].DB_MAX_OUTPUT_PORT_TYPE
+O_LED_COUNT[7] <= s_local_count[7].DB_MAX_OUTPUT_PORT_TYPE
+
+

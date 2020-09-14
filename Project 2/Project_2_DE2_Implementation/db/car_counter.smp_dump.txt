@@ -1,0 +1,14 @@
+
+State Machine - |car_counter|s_previous_state
+Name s_previous_state.A_ACTIVE_STATE s_previous_state.BOTH_ACTIVE_STATE s_previous_state.B_ACTIVE_STATE s_previous_state.BOTH_INACTIVE_STATE 
+s_previous_state.BOTH_INACTIVE_STATE 0 0 0 0 
+s_previous_state.B_ACTIVE_STATE 0 0 1 1 
+s_previous_state.BOTH_ACTIVE_STATE 0 1 0 1 
+s_previous_state.A_ACTIVE_STATE 1 0 0 1 
+
+State Machine - |car_counter|s_current_state
+Name s_current_state.A_ACTIVE_STATE s_current_state.BOTH_ACTIVE_STATE s_current_state.B_ACTIVE_STATE s_current_state.BOTH_INACTIVE_STATE 
+s_current_state.BOTH_INACTIVE_STATE 0 0 0 0 
+s_current_state.B_ACTIVE_STATE 0 0 1 1 
+s_current_state.BOTH_ACTIVE_STATE 0 1 0 1 
+s_current_state.A_ACTIVE_STATE 1 0 0 1 
