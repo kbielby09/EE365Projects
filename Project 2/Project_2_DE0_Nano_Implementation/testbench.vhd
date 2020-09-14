@@ -18,7 +18,7 @@ entity testbench is
 end testbench;
 
 -- create test for car counter circuit
-architecture test of testbench 
+architecture test of testbench is
 	
     -- add car_counter component to test  
 	component car_counter is
@@ -32,28 +32,28 @@ architecture test of testbench
 	end component; -- end component
     
     -- define signals in testbench
-    signal clock 		: std_logic := '0';
-    signal reset 		: std_logic := '0';
-    signal sensorA 	: std_logic := '0';
-    signal sensorB 	: std_logic := '0';
-	 
+    signal clk 			: std_logic := '0';
+    signal reset 			: std_logic := '0';
+    signal sensorA 		: std_logic := '0';
+    signal sensorB 		: std_logic := '0';
+--	 variable maxCount 	: std_logic_vector(7 downto 0) := "11111111";
 	 begin
 	 
 		-- connect signals to component inputs
 		DUT : car_counter port map(
-											clock 	=> I_CLK_50MHZ,
-											reset 	=> I_RESET_N,
-											sensorA 	=> I_SENSOR_A_ACTIVE_N,
-											sensorB	=> I_SENSOR_B_ACTIVE_N
+											I_CLK_50MHZ => clk,
+											I_RESET_N 	=> reset,
+											I_SENSOR_A_ACTIVE_N 	=> sensorA,
+											I_SENSOR_B_ACTIVE_N	=> sensorB
 											); -- end connect signals
 											
-		-- specify clock frequency (50MHz)
-		clock <= not clock after 10ns; -- invert clock signal at half period
+		-- specify clk frequency (50MHz)
+		clk <= not clk after 10ns; -- invert clk signal at half period
 		
 		process
 		begin
-			-- display count of 0 for 2 clock cycles
-			wait for 40ns;
+			-- display count of 0 for 2 clk cycles
+			wait for 40 ns;
 			
 			-- test cases
 				-- from idle to A
@@ -77,7 +77,7 @@ architecture test of testbench
 				wait for 20ns;
 				sensorB <= '1';
 				wait for 20ns;
-				sensor B <= '0';
+				sensorB <= '0';
 				wait for 20ns;
 				sensorA <= '0';
 				wait for 20ns;
@@ -91,7 +91,7 @@ architecture test of testbench
 			-- cases that should not happen
 				-- from A to B
 				sensorA <= '1';
-				wait 30ns;
+				wait for 30ns;
 				sensorA <= '0';
 				wait for 30ns;
 				sensorB <= '1';
@@ -131,16 +131,16 @@ architecture test of testbench
 				wait for 20ns;
 				
 				-- count to max value of counter	
-				maxCountloop : for i in 0 to "11111111" loop
-					sensorA <= '1';
-					wait for 20ns;
-					sensorB <= '1';
-					wait for 20ns;
-					sensorA <= '0';
-					wait for 20ns;
-					sensorB <= '0';
-					wait for 20ns;
-				end loop maxCountloop;
+--				maxCountloop : for i in 0 to maxCount loop
+--					sensorA <= '1';
+--					-- wait for 20ns;
+--					sensorB <= '1';
+--					-- wait for 20ns;
+--					sensorA <= '0';
+--					-- wait for 20ns;
+--					sensorB <= '0';
+--					-- wait for 20ns;
+--				end loop maxCountloop;
 				
 				-- add 1 more count to see if overflow occurs
 				sensorA <=  '1';
@@ -165,6 +165,8 @@ architecture test of testbench
 				wait for 20ns;
 				sensorA <= '0';
 				wait for 20ns;
+				
+		end process;
 				
 
 end test; -- end architecture

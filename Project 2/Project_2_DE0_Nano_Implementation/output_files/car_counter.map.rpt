@@ -1,5 +1,5 @@
 Analysis & Synthesis report for car_counter
-Thu Sep 10 15:57:19 2020
+Mon Sep 14 14:14:47 2020
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Full Version
 
 
@@ -43,7 +43,7 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Sep 10 15:57:19 2020       ;
+; Analysis & Synthesis Status        ; Successful - Mon Sep 14 14:14:47 2020       ;
 ; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Full Version ;
 ; Revision Name                      ; car_counter                                 ;
 ; Top-level Entity Name              ; car_counter                                 ;
@@ -265,12 +265,15 @@ Encoding Type:  One-Hot
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.0 Build 156 04/24/2013 SJ Full Version
-    Info: Processing started: Thu Sep 10 15:57:11 2020
+    Info: Processing started: Mon Sep 14 14:14:38 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off car_counter -c car_counter
 Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
 Info (12021): Found 2 design units, including 1 entities, in source file car_counter.vhd
     Info (12022): Found design unit 1: car_counter-behavior
     Info (12023): Found entity 1: car_counter
+Info (12021): Found 2 design units, including 1 entities, in source file testbench.vhd
+    Info (12022): Found design unit 1: testbench-test
+    Info (12023): Found entity 1: testbench
 Info (12127): Elaborating entity "car_counter" for the top level hierarchy
 Warning (10036): Verilog HDL or VHDL warning at car_counter.vhd(30): object "flag" assigned a value but never read
 Info (286030): Timing-Driven Synthesis is running
@@ -283,9 +286,9 @@ Info (21057): Implemented 26 device resources after synthesis - the final resour
     Info (21059): Implemented 8 output pins
     Info (21061): Implemented 14 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 4652 megabytes
-    Info: Processing ended: Thu Sep 10 15:57:19 2020
-    Info: Elapsed time: 00:00:08
+    Info: Peak virtual memory: 4661 megabytes
+    Info: Processing ended: Mon Sep 14 14:14:47 2020
+    Info: Elapsed time: 00:00:09
     Info: Total CPU time (on all processors): 00:00:02
 
 
