@@ -1,5 +1,5 @@
 EDA Netlist Writer report for car_counter
-Mon Sep 14 16:02:37 2020
+Mon Sep 14 20:15:46 2020
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Full Version
 
 
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Mon Sep 14 16:02:37 2020 ;
+; EDA Netlist Writer Status ; Successful - Mon Sep 14 20:15:46 2020 ;
 ; Revision Name             ; car_counter                           ;
 ; Top-level Entity Name     ; car_counter                           ;
 ; Family                    ; Cyclone IV GX                         ;
@@ -88,7 +88,7 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit EDA Netlist Writer
     Info: Version 13.0.0 Build 156 04/24/2013 SJ Full Version
-    Info: Processing started: Mon Sep 14 16:02:29 2020
+    Info: Processing started: Mon Sep 14 20:15:04 2020
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off car_counter -c car_counter
 Info (204019): Generated file car_counter_6_1200mv_85c_slow.vho in folder "C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE2_Implementation/simulation/modelsim/" for EDA simulation tool
 Info (204019): Generated file car_counter_6_1200mv_0c_slow.vho in folder "C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE2_Implementation/simulation/modelsim/" for EDA simulation tool
@@ -99,9 +99,9 @@ Info (204019): Generated file car_counter_6_1200mv_0c_vhd_slow.sdo in folder "C:
 Info (204019): Generated file car_counter_min_1200mv_0c_vhd_fast.sdo in folder "C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE2_Implementation/simulation/modelsim/" for EDA simulation tool
 Info (204019): Generated file car_counter_vhd.sdo in folder "C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE2_Implementation/simulation/modelsim/" for EDA simulation tool
 Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4579 megabytes
-    Info: Processing ended: Mon Sep 14 16:02:37 2020
-    Info: Elapsed time: 00:00:08
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Peak virtual memory: 4586 megabytes
+    Info: Processing ended: Mon Sep 14 20:15:46 2020
+    Info: Elapsed time: 00:00:42
+    Info: Total CPU time (on all processors): 00:00:02
 
 

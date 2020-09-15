@@ -14,15 +14,15 @@ Z7 FC:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE2_Implementat
 l0
 L23
 VC2]68d6BCYP]HgWG:HB:03
+!s100 Kz^4<RhNb=nhT`=8BdC@>2
 Z8 OV;C;10.1d;51
 31
-Z9 !s108 1600125638.180000
+!i10b 1
+Z9 !s108 1600133460.718000
 Z10 !s90 -reportprogress|300|-93|-work|work|C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE2_Implementation/car_counter.vhd|
 Z11 !s107 C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE2_Implementation/car_counter.vhd|
 Z12 o-93 -work work -O0
 Z13 tExplicit 1
-!s100 Kz^4<RhNb=nhT`=8BdC@>2
-!i10b 1
 Abehavioral
 R2
 R3
@@ -31,32 +31,12 @@ DEx4 work 11 car_counter 0 22 C2]68d6BCYP]HgWG:HB:03
 l54
 L37
 V4[O;5a=G477b>[VV@WPc?1
+!s100 79?9AP_RPKJeYRcmalk4z1
 R8
 31
+!i10b 1
 R9
 R10
 R11
 R12
-R13
-!s100 79?9AP_RPKJeYRcmalk4z1
-!i10b 1
-Etestbench
-w1600127224
-R2
-R3
-R4
-R5
-8C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE2_Implementation/testbench.vhd
-FC:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE2_Implementation/testbench.vhd
-l0
-L18
-VM::j<3I5_k=2l]J>?W?1_1
-!s100 ZQ8JH0c<SLP8KWC`QECki0
-R8
-32
-!i10b 1
-!s108 1600127232.933000
-!s90 -reportprogress|300|-work|work|C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE2_Implementation/testbench.vhd|
-!s107 C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE2_Implementation/testbench.vhd|
-o-work work -O0
 R13

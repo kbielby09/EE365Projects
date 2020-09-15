@@ -16,7 +16,7 @@
 -- PROGRAM "Quartus II 64-Bit"
 -- VERSION "Version 13.0.0 Build 156 04/24/2013 SJ Full Version"
 
--- DATE "09/14/2020 16:02:37"
+-- DATE "09/14/2020 20:15:45"
 
 -- 
 -- Device: Altera EP4CGX15BF14C6 Package FBGA169

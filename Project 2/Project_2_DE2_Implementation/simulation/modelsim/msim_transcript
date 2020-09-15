@@ -27,42 +27,6 @@ vcom -reportprogress 300 -work work {C:/Clarkson College/EE 365/EE365Projects/Pr
 # -- Loading package NUMERIC_STD
 # -- Compiling entity testbench
 # -- Compiling architecture test of testbench
-vsim +altera -do car_counter_run_msim_rtl_vhdl.do -l msim_transcript -gui work.testbench
-# vsim +altera -do car_counter_run_msim_rtl_vhdl.do -l msim_transcript -gui work.testbench 
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.testbench(test)
-# Loading work.car_counter(behavioral)
-# do car_counter_run_msim_rtl_vhdl.do 
-# if {[file exists rtl_work]} {
-# 	vdel -lib rtl_work -all
-# }
-# vlib rtl_work
-# vmap work rtl_work
-# Modifying modelsim.ini
-# 
-# vcom -93 -work work {C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE2_Implementation/car_counter.vhd}
-# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity car_counter
-# -- Compiling architecture behavioral of car_counter
-# 
-add wave -position insertpoint sim:/testbench/*
-add wave -position insertpoint sim:/testbench/DUT/*
-run
-vcom -reportprogress 300 -work work {C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE2_Implementation/testbench.vhd}
-# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity testbench
-# -- Compiling architecture test of testbench
 vcom -reportprogress 300 -work work {C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE2_Implementation/testbench.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
@@ -100,12 +64,43 @@ add wave -position insertpoint sim:/testbench/*
 add wave -position insertpoint sim:/testbench/DUT/*
 run
 # ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 110 ns  Iteration: 0  Instance: /testbench/DUT
+#    Time: 150 ns  Iteration: 0  Instance: /testbench/DUT
 run
 # ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 190 ns  Iteration: 0  Instance: /testbench/DUT
+#    Time: 230 ns  Iteration: 0  Instance: /testbench/DUT
 # ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 270 ns  Iteration: 0  Instance: /testbench/DUT
+#    Time: 310 ns  Iteration: 0  Instance: /testbench/DUT
+run
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 390 ns  Iteration: 0  Instance: /testbench/DUT
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 470 ns  Iteration: 0  Instance: /testbench/DUT
+# WARNING: No extended dataflow license exists
+run
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 550 ns  Iteration: 0  Instance: /testbench/DUT
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 630 ns  Iteration: 0  Instance: /testbench/DUT
+run
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 710 ns  Iteration: 0  Instance: /testbench/DUT
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 790 ns  Iteration: 0  Instance: /testbench/DUT
+run
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 870 ns  Iteration: 0  Instance: /testbench/DUT
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 950 ns  Iteration: 0  Instance: /testbench/DUT
+run
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 1030 ns  Iteration: 0  Instance: /testbench/DUT
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 1110 ns  Iteration: 0  Instance: /testbench/DUT
+run
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 1190 ns  Iteration: 0  Instance: /testbench/DUT
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 1270 ns  Iteration: 0  Instance: /testbench/DUT
 vcom -reportprogress 300 -work work {C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE2_Implementation/testbench.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
@@ -114,8 +109,835 @@ vcom -reportprogress 300 -work work {C:/Clarkson College/EE 365/EE365Projects/Pr
 # -- Loading package NUMERIC_STD
 # -- Compiling entity testbench
 # -- Compiling architecture test of testbench
-# ** Error: C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE2_Implementation/testbench.vhd(48): (vcom-1436) Actual expression (prefix expression) of formal "I_SENSOR_A_ACTIVE_N" is not globally static.
+vcom -reportprogress 300 -work work {C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE2_Implementation/testbench.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity testbench
+# -- Compiling architecture test of testbench
+vsim +altera -do car_counter_run_msim_rtl_vhdl.do -l msim_transcript -gui work.testbench
+# vsim +altera -do car_counter_run_msim_rtl_vhdl.do -l msim_transcript -gui work.testbench 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.testbench(test)
+# Loading work.car_counter(behavioral)
+# do car_counter_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
 # 
-# ** Error: C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE2_Implementation/testbench.vhd(49): (vcom-1436) Actual expression (prefix expression) of formal "I_SENSOR_B_ACTIVE_N" is not globally static.
+# vcom -93 -work work {C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE2_Implementation/car_counter.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity car_counter
+# -- Compiling architecture behavioral of car_counter
 # 
-# ** Error: C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE2_Implementation/testbench.vhd(186): VHDL Compiler exiting
+add wave -position insertpoint sim:/testbench/*
+add wave -position insertpoint sim:/testbench/DUT/*
+run
+run
+run
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 470 ns  Iteration: 0  Instance: /testbench/DUT
+run
+run
+run
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 870 ns  Iteration: 0  Instance: /testbench/DUT
+run
+run
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 1270 ns  Iteration: 0  Instance: /testbench/DUT
+run
+run
+run
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 1670 ns  Iteration: 0  Instance: /testbench/DUT
+run
+run
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 2070 ns  Iteration: 0  Instance: /testbench/DUT
+vcom -reportprogress 300 -work work {C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE2_Implementation/testbench.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity testbench
+# -- Compiling architecture test of testbench
+vsim +altera -do car_counter_run_msim_rtl_vhdl.do -l msim_transcript -gui work.testbench
+# vsim +altera -do car_counter_run_msim_rtl_vhdl.do -l msim_transcript -gui work.testbench 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.testbench(test)
+# Loading work.car_counter(behavioral)
+# do car_counter_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE2_Implementation/car_counter.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity car_counter
+# -- Compiling architecture behavioral of car_counter
+# 
+add wave -position insertpoint sim:/testbench/*
+add wave -position insertpoint sim:/testbench/DUT/*
+run
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 30 ns  Iteration: 0  Instance: /testbench/DUT
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+vcom -reportprogress 300 -work work {C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE2_Implementation/testbench.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity testbench
+# -- Compiling architecture test of testbench
+vsim +altera -do car_counter_run_msim_rtl_vhdl.do -l msim_transcript -gui work.testbench
+# vsim +altera -do car_counter_run_msim_rtl_vhdl.do -l msim_transcript -gui work.testbench 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.testbench(test)
+# Loading work.car_counter(behavioral)
+# do car_counter_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE2_Implementation/car_counter.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity car_counter
+# -- Compiling architecture behavioral of car_counter
+# 
+add wave -position insertpoint sim:/testbench/*
+add wave -position insertpoint sim:/testbench/DUT/*
+run
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 30 ns  Iteration: 0  Instance: /testbench/DUT
+run
+vcom -reportprogress 300 -work work {C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE2_Implementation/testbench.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity testbench
+# -- Compiling architecture test of testbench
+vsim +altera -do car_counter_run_msim_rtl_vhdl.do -l msim_transcript -gui work.testbench
+# vsim +altera -do car_counter_run_msim_rtl_vhdl.do -l msim_transcript -gui work.testbench 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.testbench(test)
+# Loading work.car_counter(behavioral)
+# do car_counter_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE2_Implementation/car_counter.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity car_counter
+# -- Compiling architecture behavioral of car_counter
+# 
+run
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 30 ns  Iteration: 0  Instance: /testbench/DUT
+add wave -position insertpoint sim:/testbench/*
+add wave -position insertpoint sim:/testbench/DUT/*
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE2_Implementation/simulation/modelsim/wave.do}
+# Load canceled
+vcom -reportprogress 300 -work work {C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE2_Implementation/testbench.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity testbench
+# -- Compiling architecture test of testbench
+vsim +altera -do car_counter_run_msim_rtl_vhdl.do -l msim_transcript -gui work.testbench
+# vsim +altera -do car_counter_run_msim_rtl_vhdl.do -l msim_transcript -gui work.testbench 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.testbench(test)
+# Loading work.car_counter(behavioral)
+# do car_counter_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE2_Implementation/car_counter.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity car_counter
+# -- Compiling architecture behavioral of car_counter
+# 
+add wave -position insertpoint sim:/testbench/*
+add wave -position insertpoint sim:/testbench/DUT/*
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# WARNING: No extended dataflow license exists
+vcom -reportprogress 300 -work work {C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE2_Implementation/testbench.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity testbench
+# -- Compiling architecture test of testbench
+vsim +altera -do car_counter_run_msim_rtl_vhdl.do -l msim_transcript -gui work.testbench
+# vsim +altera -do car_counter_run_msim_rtl_vhdl.do -l msim_transcript -gui work.testbench 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.testbench(test)
+# Loading work.car_counter(behavioral)
+# do car_counter_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE2_Implementation/car_counter.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity car_counter
+# -- Compiling architecture behavioral of car_counter
+# 
+add wave -position insertpoint sim:/testbench/*
+add wave -position insertpoint sim:/testbench/DUT/*
+run
+run
+run
+run
+run
+run
+run
+# Load canceled
+vcom -reportprogress 300 -work work {C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE2_Implementation/testbench.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity testbench
+# -- Compiling architecture test of testbench
+vsim +altera -do car_counter_run_msim_rtl_vhdl.do -l msim_transcript -gui work.testbench
+# vsim +altera -do car_counter_run_msim_rtl_vhdl.do -l msim_transcript -gui work.testbench 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.testbench(test)
+# Loading work.car_counter(behavioral)
+# do car_counter_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE2_Implementation/car_counter.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity car_counter
+# -- Compiling architecture behavioral of car_counter
+# 
+add wave -position insertpoint sim:/testbench/*
+add wave -position insertpoint sim:/testbench/DUT/*
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+vcom -reportprogress 300 -work work {C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE2_Implementation/testbench.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity testbench
+# -- Compiling architecture test of testbench
+# internal error on MenuItemCan 
+# m is .mBar.file label is End Simulation state is disabled 
+#  Trace back:  
+#    <5: ::Vsimmenu::MenuItemCan .mBar.file {End Simulation} disabled 
+#    >4: ::.main_pane.wave.interior.cs.body.pw.wf.tree Action .main_pane.wave SetMenuState {{can_open {::Vsimmenu::MenuItemCan .mBar.file Open...}} {can_close_file {::Vsimmenu::MenuItemCan .mBar.file {End Simulation}}} {can_save {::Vsimmenu::MenuItemCan .mBar.file {Save Dataset...}}} {can_saveas {::Vsimmenu::MenuItemCan .mBar.file {Save List...}}} {can_report {::Vsimmenu::MenuItemCan .mBar.file Report...}} {can_use_source_file {::Vsimmenu::MenuItemCan .mBar.file {Use Source...}}} {can_environment {::Vsimmenu::MenuItemCan .mBar.file Environment}} {can_page_setup {::Vsimmenu::MenuItemCan .mBar.file {Page Setup...}}} {can_print {::Vsimmenu::MenuItemCan .mBar.file Print...}} {can_print_postscript {::Vsimmenu::MenuItemCan .mBar.file {Print Postscript...}}} {can_close_window {::Vsimmenu::MenuItemCan .mBar.file {Close Window}}}} 
+#    <3: ::Wave <trace variable?>  
+#    >2: ::.vcop Action SetMenuState {{can_open {::Vsimmenu::MenuItemCan .mBar.file Open...}} {can_close_file {::Vsimmenu::MenuItemCan .mBar.file {End Simulation}}} {can_save {::Vsimmenu::MenuItemCan .mBar.file {Save Dataset...}}} {can_saveas {::Vsimmenu::MenuItemCan .mBar.file {Save List...}}} {can_report {::Vsimmenu::MenuItemCan .mBar.file Report...}} {can_use_source_file {::Vsimmenu::MenuItemCan .mBar.file {Use Source...}}} {can_environment {::Vsimmenu::MenuItemCan .mBar.file Environment}} {can_page_setup {::Vsimmenu::MenuItemCan .mBar.file {Page Setup...}}} {can_print {::Vsimmenu::MenuItemCan .mBar.file Print...}} {can_print_postscript {::Vsimmenu::MenuItemCan .mBar.file {Print Postscript...}}} {can_close_window {::Vsimmenu::MenuItemCan .mBar.file {Close Window}}}} 
+#    <1: ::Vsimmenu::DefaultMenuPostCmd .mBar.file {FileMenuPostCmd .mBar.file} SetMenuState 
+vsim +altera -do car_counter_run_msim_rtl_vhdl.do -l msim_transcript -gui work.testbench
+# vsim +altera -do car_counter_run_msim_rtl_vhdl.do -l msim_transcript -gui work.testbench 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.testbench(test)
+# Loading work.car_counter(behavioral)
+# do car_counter_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE2_Implementation/car_counter.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity car_counter
+# -- Compiling architecture behavioral of car_counter
+# 
+add wave -position insertpoint sim:/testbench/*
+add wave -position insertpoint sim:/testbench/DUT/*
+run
+# Load canceled
+vcom -reportprogress 300 -work work {C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE2_Implementation/testbench.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity testbench
+# -- Compiling architecture test of testbench
+vsim +altera -do car_counter_run_msim_rtl_vhdl.do -l msim_transcript -gui work.testbench
+# vsim +altera -do car_counter_run_msim_rtl_vhdl.do -l msim_transcript -gui work.testbench 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.testbench(test)
+# Loading work.car_counter(behavioral)
+# do car_counter_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE2_Implementation/car_counter.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity car_counter
+# -- Compiling architecture behavioral of car_counter
+# 
+add wave -position insertpoint sim:/testbench/*
+add wave -position insertpoint sim:/testbench/DUT/*
+run
+vcom -reportprogress 300 -work work {C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE2_Implementation/testbench.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity testbench
+# -- Compiling architecture test of testbench
+vsim +altera -do car_counter_run_msim_rtl_vhdl.do -l msim_transcript -gui work.testbench
+# vsim +altera -do car_counter_run_msim_rtl_vhdl.do -l msim_transcript -gui work.testbench 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.testbench(test)
+# Loading work.car_counter(behavioral)
+# do car_counter_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE2_Implementation/car_counter.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity car_counter
+# -- Compiling architecture behavioral of car_counter
+# 
+add wave -position insertpoint sim:/testbench/*
+add wave -position insertpoint sim:/testbench/DUT/*
+run
+vcom -reportprogress 300 -work work {C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE2_Implementation/testbench.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity testbench
+# -- Compiling architecture test of testbench
+vsim +altera -do car_counter_run_msim_rtl_vhdl.do -l msim_transcript -gui work.testbench
+# vsim +altera -do car_counter_run_msim_rtl_vhdl.do -l msim_transcript -gui work.testbench 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.testbench(test)
+# Loading work.car_counter(behavioral)
+# do car_counter_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE2_Implementation/car_counter.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity car_counter
+# -- Compiling architecture behavioral of car_counter
+# 
+add wave -position insertpoint sim:/testbench/*
+add wave -position insertpoint sim:/testbench/DUT/*
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
