@@ -24,6 +24,7 @@ vcom -reportprogress 300 -work work {C:/Clarkson College/EE 365/EE365Projects/Pr
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
 # -- Compiling entity testbench
 # -- Compiling architecture test of testbench
 vsim +altera -do car_counter_run_msim_rtl_vhdl.do -l msim_transcript -gui work.testbench
@@ -31,8 +32,8 @@ vsim +altera -do car_counter_run_msim_rtl_vhdl.do -l msim_transcript -gui work.t
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
-# Loading work.testbench(test)
 # Loading ieee.numeric_std(body)
+# Loading work.testbench(test)
 # Loading work.car_counter(behavioral)
 # do car_counter_run_msim_rtl_vhdl.do 
 # if {[file exists rtl_work]} {
@@ -54,8 +55,6 @@ vsim +altera -do car_counter_run_msim_rtl_vhdl.do -l msim_transcript -gui work.t
 add wave -position insertpoint sim:/testbench/*
 add wave -position insertpoint sim:/testbench/DUT/*
 run
-run
-# WARNING: No extended dataflow license exists
 vcom -reportprogress 300 -work work {C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE2_Implementation/testbench.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
@@ -100,6 +99,23 @@ vsim +altera -do car_counter_run_msim_rtl_vhdl.do -l msim_transcript -gui work.t
 add wave -position insertpoint sim:/testbench/*
 add wave -position insertpoint sim:/testbench/DUT/*
 run
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 110 ns  Iteration: 0  Instance: /testbench/DUT
 run
-run
-run
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 190 ns  Iteration: 0  Instance: /testbench/DUT
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 270 ns  Iteration: 0  Instance: /testbench/DUT
+vcom -reportprogress 300 -work work {C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE2_Implementation/testbench.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity testbench
+# -- Compiling architecture test of testbench
+# ** Error: C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE2_Implementation/testbench.vhd(48): (vcom-1436) Actual expression (prefix expression) of formal "I_SENSOR_A_ACTIVE_N" is not globally static.
+# 
+# ** Error: C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE2_Implementation/testbench.vhd(49): (vcom-1436) Actual expression (prefix expression) of formal "I_SENSOR_B_ACTIVE_N" is not globally static.
+# 
+# ** Error: C:/Clarkson College/EE 365/EE365Projects/Project 2/Project_2_DE2_Implementation/testbench.vhd(186): VHDL Compiler exiting

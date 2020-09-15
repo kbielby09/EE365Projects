@@ -34,7 +34,7 @@ architecture test of testbench is
     
     -- define signals in testbench
     signal clk 			: std_logic 							:= '0';
-    signal reset 			: std_logic 							:= '0';
+    signal reset 			: std_logic 							:= '1';
     signal sensorA 		: std_logic 							:= '0';
     signal sensorB 		: std_logic 							:= '0';
 	 signal output			: std_logic_vector(7 downto 0)	:= "00000000";
@@ -167,7 +167,7 @@ architecture test of testbench is
 				wait for 20 ns;
 				
 				-- test reset
-				reset <= '1';
+				reset <= '0';
 				wait for 20 ns;
 				
 				-- test decrementing counter from 0
