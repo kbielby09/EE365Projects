@@ -1,13 +1,13 @@
 --------------------------------------------------------------------------------
--- Filename:        car_counter.vhd
--- Author(s):       Kyle Bielby, Chris Lloyd (Team 1)
--- Class:           EE365 (Project 2)
--- Due Date:        2020-09-14
--- Date Created:    2020-09-07
--- Target Board:    Altera DE2
--- Project:         car_counter (Main Entity)
--- Description:     Design file that describes behavior of parking lot car 
---                  counter system with multiple detectors (sensors) A and B.
+-- Filename     : car_counter.vhd
+-- Author(s)    : Kyle Bielby, Chris Lloyd (Team 1)
+-- Class        : EE365 (Project 2)
+-- Due Date     : 2020-09-14
+-- Date Created : 2020-09-07
+-- Target Board : Altera DE2
+-- Entity       : car_counter (Main Entity)
+-- Description  : Design file that describes behavior of parking lot car 
+--                counter system with multiple detectors (sensors) A and B.
 --------------------------------------------------------------------------------
 
 -----------------
@@ -113,13 +113,16 @@ architecture behavioral of car_counter is
           if s_previous_state = BOTH_INACTIVE_STATE then
             if not (s_local_count = 255) then -- Ensure no rollover
               s_local_count <= s_local_count + 1;
-            -- CDL=> Check for else
+            else
+              s_local_count <= s_local_count;
             end if;
           end if;
         when BOTH_INACTIVE_STATE =>  -- NONE -> A
           if s_previous_state = A_ACTIVE_STATE then
             if not (s_local_count = 0) then   -- Ensure no rollover
               s_local_count <= s_local_count - 1;
+            else
+              s_local_count <= s_local_count;              
             end if;
           end if;
         when others              =>

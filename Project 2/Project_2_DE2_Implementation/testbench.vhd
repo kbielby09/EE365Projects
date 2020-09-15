@@ -1,14 +1,12 @@
------------------------------------------------------------------------------------------
--- Filename:    testbench.vhd (Altera DEO nano implementation)
--- Author(s):     Kyle Bielby, Chris Lloyd (Team 1)
--- Class:       EE365 (Project 2)
--- Due Date:    2020-09-14
--- Date Created:  2020-09-07
--- Last Revised:  2020-09-07
--- Target Board:  Altera DE0 Nano
--- Project:     car_counter (Main Entity)
--- Description:   testbench file to test output of car_counter.vhd for DE0 nano board
-----------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+-- Filename     : testbench.vhd
+-- Author(s)    : Kyle Bielby, Chris Lloyd (Team 1)
+-- Class        : EE365 (Project 2)
+-- Due Date     : 2020-09-14
+-- Date Created : 2020-09-07
+-- Entity       : testbench
+-- Description  : Testing code to verify car_counter design.
+--------------------------------------------------------------------------------
 
 -----------------
 --  Libraries  --
@@ -16,7 +14,6 @@
 library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
-
 
 --------------
 --  Entity  --
